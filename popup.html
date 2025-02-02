@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClarifAI</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 10px; width: 250px; }
+        button { margin-top: 10px; padding: 5px; }
+    </style>
+</head>
+<body>
+    <h3>Speech Recognition</h3>
+    <p id="recognizedText">Waiting for speech...</p>
+    <button id="startButton">Start Speech Input</button>
+    <h3>Settings</h3>   
+    <label for="hoverColor">Hover Text Color:</label>
+    <input type="color" id="hoverColorPicker">
+    <h3>Choose Language</h3>
+  <select id="language">
+    <option value="en">English</option>
+    <option value="es">Spanish</option>
+    <option value="fr">French</option>
+    <option value="hi">Hindi</option>
+    <option value="zh-CN">Chinese</option>
+  </select>
+  <button id="translate">Translate</button>
+
+  <h1>Task Reminder</h1>
+  <input type="text" id="taskInput" placeholder="Enter a task">
+  <input type="time" id="taskTime">
+  <button id="addTask">Add Task</button>
+  <ul id="taskList"></ul>
+
+  <h1>Health Monitor</h1>
+  <button id="startHealthMonitor">Start Health Monitoring</button>
+  <button id="stopHealthMonitor">Stop Health Monitoring</button>
+  <p>Drink Water Reminder: <span id="waterStatus">Off</span></p>
+    <script src="popup.js"></script>
+</body>
+</html>
